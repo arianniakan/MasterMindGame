@@ -1,0 +1,11 @@
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.exe
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.deps.json
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.runtimeconfig.json
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.runtimeconfig.dev.json
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.dll
+E:\programing shit\projects\Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1\Master_Mind.pdb
+E:\programing shit\projects\Master_Mind\Master_Mind\obj\Debug\netcoreapp3.1\Master_Mind.AssemblyInfoInputs.cache
+E:\programing shit\projects\Master_Mind\Master_Mind\obj\Debug\netcoreapp3.1\Master_Mind.AssemblyInfo.cs
+E:\programing shit\projects\Master_Mind\Master_Mind\obj\Debug\netcoreapp3.1\Master_Mind.dll
+E:\programing shit\projects\Master_Mind\Master_Mind\obj\Debug\netcoreapp3.1\Master_Mind.pdb
+E:\programing shit\projects\Master_Mind\Master_Mind\obj\Debug\netcoreapp3.1\Master_Mind.csprojAssemblyReference.cache
