@@ -15,6 +15,6 @@ the number of tries it took you to guess!
 this code has been writen using visual studio and what i uploaded here was the whole project folder
 
 the main code and the functions are all in program.cs 
-to try the game simply use the .exe file
+to try the game simply use the .exe file located in the debug folder(Master_Mind\Master_Mind\bin\Debug\netcoreapp3.1->Master_mind.exe)
 
 *written in c#*
