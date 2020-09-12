@@ -12,12 +12,17 @@ namespace Master_Mind
     {
         static void Main(string[] args)
         {
+            /*this is the number that is to be guessed*/
             String number;
             int digits;
             string dig;
+            /*this is the string of numbers that we guess*/
             string guess;
+            /*the number of tries we get to guess the number*/
             int tries = 10;
+            /*out puting the possible options of dificalty*/
             Console.WriteLine("choose the level of the game: |5|6|7|8|9| ");
+            /*we get the number that the user inputs and we check for it to be one of the options*/
             while (true)
             {
 
@@ -42,6 +47,8 @@ namespace Master_Mind
 
             }
             number = Convert.ToString(Random_Num(digits));
+            
+            /* we print the games rules and description */
             Console.WriteLine("______________________________________________________________");
 
             Console.WriteLine("you have " + tries + " tries to guess the number");
@@ -53,16 +60,19 @@ namespace Master_Mind
 
 
 
-
+            /*this starts the timer of the game*/
             System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
+            /* we check if the number is guessed correctly and apply the colors to each digit */
             for (int i = 0; i < tries; i++)
             {
                 guess = GetNums(digits);
+                /* if the number is guessed correctly we get out of this loop and end the game*/
                 if (guess == number)
                 {
                     Console.WriteLine("!!!congrats!!!" + "\n" + "you guessed the number!");
                     break;
                 }
+                /* we out put the given guess with the according numbers */
                 for (int j = 0; j < guess.Length; j++)
                 {
                     if (number.IndexOf(guess[j]) != -1)
@@ -87,7 +97,9 @@ namespace Master_Mind
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                 }
+            
                 Console.Write("\n");
+                /* if we are out of tries the loop ends and the game finishes */
                 if (i == tries - 1)
                 {
                     Console.WriteLine("you are out of tries!\nGame Over!");
@@ -97,7 +109,7 @@ namespace Master_Mind
                 }
 
             }
-       
+            /*we stop the time and show the time you took to play */
             sw.Stop();
             Console.Write(sw.Elapsed.TotalSeconds + " Sec    / " +
                     ((float)sw.Elapsed.TotalSeconds / (float)60).ToString("N2") +
@@ -105,6 +117,7 @@ namespace Master_Mind
 
             Console.ReadLine();
         }
+        /* a function to get a random number with a given number of digits  */
         static int Random_Num(int digits)
         {
             Random rnd = new Random();
@@ -131,6 +144,7 @@ namespace Master_Mind
             }
             return num;
         }
+        /* checks if the string contains nothing but numbers */
         static bool Is_Num(string num)
         {
             for (int i = 0; i < num.Length; i++)
@@ -143,6 +157,7 @@ namespace Master_Mind
             if (num == "") return false;
             return true;
         }
+        /* checks the input for the number and turns it if its the same number of digits we want */
         static string GetNums(int digits)
         {
             string str;
